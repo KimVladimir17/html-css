@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+p{
+  margin-top: 14px;
+  font-size: 14px;
+}
+span{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.container {
+  height: 100vh;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  background-color: grey;
+  padding: 20px;
+}
+
+
+.item{
+  border:1px solid black;
+  grid-column: span 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: white;
+
+}
+
+.item:first-child{
+  background-color: #fbec5d;
+}
+
+.item:last-child{
+  background-color: #fbec5d;
+}
+
+.item2{
+  background-color:  #becc41  ;
+}
+
+.item4>.name_item>p{
+  background-color:  #ea213a;
+}
+
+
+.item .name_item{
+  position: relative;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.item .name_item>i{
+  position: absolute;
+  top: 14px;
+  right: 10px;
+  font-size: 25px;
+}
+
+.item .qlt{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+}
+
+.item .qlt>div{
+  font-weight: bold;
+}
+
+.item .icons{
+  font-size: 25px;
+  color: rgb(11, 11, 122);
+  padding-top: 15px;
+}
+
+.item .icons>i{
+  margin-left: 24px;
+}
